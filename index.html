@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="monstyle.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>Accueil</title>
+    </head>
+    <body>
+        <header id="myHeader">
+            <a href="index.html"><img class="headerlogo" src="Headerlogo.png"></a>
+            <div class="head">
+                <button id="ChrismassToggle">Mode Noël</button>
+                <button id="darkModeToggle">Mode Sombre</button>
+                <button onclick="changeLanguage('fr')">Français</button>
+                <button onclick="changeLanguage('en')">English</button>
+            </div>
+            <div id="menunav">
+                <ul>
+                    <li><a id="Lobby" href="#">Accueil</a></li>
+                    <li><a id="Presentation" href="./presentation.html">Présentation</a></li>
+                    <li><a id="Quizz" href="quizz.html">Quizz</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="boite haut">
+            <a href="zonecachee.html">Tu as trouvé le secret</a>
+        </div>
+        <main>
+            <div class="snowflakes" aria-hidden="true">
+                <div class="snowflake"></div>
+                <div class="snowflake"></div>
+                <div class="snowflake"></div>
+                <div class="snowflake"></div>
+            </div>
+            <div class="boite">
+                <img class="logo noir" src="logonuit2023.png">
+                <div class="text">
+                    <h2 id="trad1">Qu'est ce que c'est que la nuit de l'info ?</h2>
+                    <p id="trad2">La nuit de l'info est un évènement compétitif national. Les participants ont toute une nuit pour réalisé un défi unique. En même temps, ils peuvent réaliser des défis proposés par des entreprises volontaires. C'est l'occasion de découvrir un nouvel aspect du travail en groupe. L'évènement débute le jeudi soir au coucher du soleil et se termine le lendemain au lever du soleil. Les meilleurs projets sont récompensés par les jurys de chacun des défis proposés. Ce grand évènement se déroule depuis 16 ans. C'est une expérience enrichissante, unique et accessible à tous les intéressés </p>
+                    <a id="trad3" href="https://www.nuitdelinfo.com/"> Site vers la nuit de l'info</a>
+                </div>
+            </div>
+            <div class="boite">
+                <div class="text">
+                    <h2 id="trad4">L'équipe Unfiscit et son projet Unclimated</h2>
+                    <p id="trad5">Notre équipe a décidé de faire un site web qui permettrait à tout public de s'informer correctement au sujet des changements climatiques et son impact social, économique, etc.
+                    Pour cela, nous avons décidé de rester dans un domaine que nous maîtrisons et avons réalisé ce site web. Le but est d'avoir un site qui est à la fois pertinent et ludique.
+                    Un quizz a été mis à disposition pour éviter une lecture trop barbante. Il renvoie aux éléments  en question en cas d'erreur.
+                    Ce petit site est rempli de petits secrets cachés que vous pouvez découvrir (il faut savoir être patient)
+                    </p>
+                </div>
+                <img class="logo" src="logo.png">
+            </div>
+            <div class="boite">
+                <div class="text">
+                    <h2 id="trad6">Notre expérience</h2>
+                    <p id="trad7">Dans la globalité, l'expérience a été très bonne. Une bonne ambiance accompagnée d'un travail rigoureux. La recontre avec des professionnels étaient très intéressantes Le plus dur est de s'organiser en si peu de temps avec autant de monde. Cela a donné lieux à quelques ralentissements mais nous sommes tous fier du résultat que vous êtes en train de lire
+                    </p>
+                    <p id="trad8">    
+                    -L'équipe Unficsit
+                    </p>
+                </div>
+            </div>
+            <div id="popup" class="hidden">
+                <div class="MOUVEMENT">
+                    <img src="Wally.gif" alt="Wally Image">
+                    <img src="Eve.gif" alt="Eve Image">
+                </div>
+            </div>
+        </main>
+        <script src="monjava.js"></script>
+        <footer>
+            <div class="text">
+                <p>
+                    <h2 id="trad9">Membres du groupe</h2>
+                </p>
+                <ul>
+                    <li>CURSOL Valentin (Leader)</li>
+                    <li>REYNIER Zyad</li>
+                    <li>ARVIEUX Alexis</li>
+                    <li>WALKOWIAK Yael</li>
+                    <li>DONIS Nathanel</li>
+                    <li>ALBA Kévin</li>
+                    <li>CASTETBON Enzo</li>
+                    <li>HERAULT Mathieu</li>
+                    <li>MONTAGARD Matéo</li>
+                    <li>REVERBEL Clément</li>
+                </ul>
+            </div>
+            <div class="text">
+                <a id="trad10" href="#">Retour en haut</a>
+            </div>
+            <div class="text">
+                <p>
+                    <h2 id="trad11">Lien des pages du site</h2>
+                </p>
+                <ul>
+                    <li><a id="trad12" href="#">Accueil</a></li>
+                    <li><a id="trad13" href="./presentation.html">Présentation</a></li>
+                    <li><a href="quizz.html">Quizz</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

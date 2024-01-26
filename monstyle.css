@@ -1,0 +1,239 @@
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: lightgrey;
+    border-radius: 6px;
+    width: 16px;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+body {
+    margin: 0;
+    margin: 0;
+    background-image: url(fond.png);
+    background-size: cover;
+    background-position: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: top 0.5s;
+    z-index: 1000;
+}
+h1{
+    margin:0;
+}
+main {
+    margin-top: 200px ; /* Ajuster en fonction de la hauteur réelle de votre header */
+}
+.boite{
+    border: #333 solid 5px;
+    border-radius: 40px;
+    background: linear-gradient(to bottom right,white,rgba(250, 250, 250, 0.90));
+    margin:5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+}
+.espace{
+    width: 10%;
+}
+.text{   
+    width: 60%;
+    padding-right: 20px;
+    margin-bottom: 2%;
+}
+.logo{
+    width: 20%;
+    height: auto;
+}
+.logo:hover{
+    transform: scale(1.02);
+    transition-duration: 600ms;
+}
+
+#menunav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+    margin-right: 2em;
+    padding:0;
+}
+
+#menunav a{
+    color:white;
+    display: flex;
+    text-decoration: None;
+    font-size: larger;
+}
+
+footer {
+    background-color:#333;
+    color:white;
+    padding: 20px;
+    text-align: center ;
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 3em;
+}
+footer a{
+    text-decoration: none;
+    color:orange;
+}
+footer li{
+    width: 40%;
+    text-align:left;
+}
+
+.planete img{
+    width: 100%;
+    animation: spin 60s linear infinite;
+    transform-origin: center center; /* Centre le point de rotation au milieu de l'élément */
+  }
+  
+@keyframes spin {
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+.head{
+    display: flex;
+    margin-left: 75%;
+}
+.head button{
+    border-bottom: gray solid 1px;
+    background-color:black;
+    color:white;
+    border-radius: 8px;
+
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    z-index: 9999;
+  }
+.hidden {
+    display: none;
+  }
+
+.noir{
+    background-color: #000000;
+    border-radius: 500px;
+    width: 15%;
+    margin-right: 5%    ;
+}
+  /* Styles pour le thème sombre */
+body.dark-theme {
+    background-image: url(fondetoile.jpg);
+    background-size: cover;
+    .boite{
+        background: linear-gradient(to bottom right,black,rgba(125, 125, 125, 0.55));
+        color:white;
+    }
+}
+
+body.Chrismass-theme {
+    background-image: url(noelfond.jpg);
+    background-size: cover;
+}
+
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+
+.snowflake {
+    position: absolute;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: snowflakes-fall linear infinite;
+  }
+
+@keyframes snowflakes-fall {
+100% {
+    transform: translateY(100vh);
+ }
+}
+.headerlogo{
+    width: 15%;
+}
+.MOUVEMENT img {
+    animation: moveRight 5s linear infinite; /* Ajuste la durée et l'animation selon tes besoins */
+    max-width: 100%; /* Ajuste la taille maximale des images */
+  }
+  
+    @keyframes moveRight {
+    to {
+      transform: translateX(100vw); /* Déplace l'image hors de l'écran vers la droite */
+    }
+  }
+
+@media screen and (min-width: 900px) {
+    .boite{
+        display:inline block;
+    }
+  }
+
+.haut{
+    margin-top:10px;
+}
+.haut a{
+    color: orange;
+}
+
+.question-container {
+    display: none;
+  }
+
+  #questions {
+    list-style: none;
+  }
+
+  .result {
+    font-weight: bold;
+    color: red;
+  }
+
+.prems{
+    margin-top: 100px;
+}
+
+.quizz li{
+    margin: 1em;
+}
+
+.quizz label{
+    margin-left: 1%;
+}
+
+.lejeu{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#gameCanvas {
+    border: 5px solid black;
+    position:relative;
+}
